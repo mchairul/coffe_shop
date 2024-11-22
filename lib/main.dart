@@ -1,3 +1,4 @@
+import 'package:coffe_shop/providers/provider_fragment.dart';
 import 'package:coffe_shop/providers/provider_user.dart';
 import 'package:coffe_shop/routes_app.dart';
 import 'package:coffe_shop/screens/launcher.dart';
@@ -18,6 +19,9 @@ class MyApp extends StatelessWidget {
       providers: [
         ChangeNotifierProvider(
             create: (context) => ProviderUser()
+        ),
+        ChangeNotifierProvider(
+            create: (context) => ProviderFragment()
         )
       ],
       builder: (context, child) {
