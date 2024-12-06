@@ -16,7 +16,7 @@ class _ComponentSearchFormState extends State<ComponentSearchForm> {
         Expanded(
           flex: 3,
           child: TextFormField(
-            decoration: InputDecoration(
+            decoration: const InputDecoration(
               prefixIcon: Icon(Icons.search, color: Colors.white,),
               hintText: 'Search Coffe',
               contentPadding: EdgeInsets.symmetric(vertical: 20,horizontal: 20),
@@ -43,11 +43,15 @@ class _ComponentSearchFormState extends State<ComponentSearchForm> {
           flex: 1,
             child: Container(
               height: 60,
-              width: 60,
-              color: brownPrimary,
+              width: 50,
+              //color: brownPrimary,
+              decoration: BoxDecoration(
+                color: brownPrimary,
+                borderRadius: BorderRadius.circular(25)
+              ),
               child: MaterialButton(
                   onPressed: (){},
-                child: Icon(Icons.settings),
+                child: Icon(Icons.tune),
               ),
             )
         )
