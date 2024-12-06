@@ -1,9 +1,12 @@
+import 'dart:ffi';
+
 import 'package:coffe_shop/fragments/fragment_home.dart';
 import 'package:flutter/material.dart';
 
 class ProviderFragment with ChangeNotifier {
   Widget _currentFragment = FragmentHome();
   int _currentIndex = 0;
+  int _currentCategory = 0;
 
   get currentFragmentGetter => _currentFragment;
 
@@ -36,6 +39,13 @@ class ProviderFragment with ChangeNotifier {
       }
       notifyListeners();
     }
+  }
+
+  get currentCategoryGetter => _currentCategory;
+
+  set setCurrentCategory(int category) {
+    _currentCategory = category;
+    notifyListeners();
   }
 }
 

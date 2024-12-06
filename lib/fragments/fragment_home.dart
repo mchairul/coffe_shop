@@ -1,4 +1,5 @@
 import 'package:coffe_shop/components/home/component_banner_promo.dart';
+import 'package:coffe_shop/components/home/component_category_button.dart';
 import 'package:coffe_shop/components/home/component_search_form.dart';
 import 'package:coffe_shop/utils/colors.dart';
 import 'package:flutter/material.dart';
@@ -58,7 +59,12 @@ class FragmentHome extends StatelessWidget {
                 ),
               ),
             ),
-            ComponentBannerPromo()
+            ComponentBannerPromo(),
+            SizedBox(height: 20,),
+            Container(
+              height: 50,
+              child: ComponentCategoryButton(),
+            )
           ],
         ),
       )
