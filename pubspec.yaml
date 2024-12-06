@@ -51,6 +51,8 @@ flutter:
   assets:
     - assets/images/bg-walkthrough.png
     - assets/images/banner-promo.png
+    - assets/images/caffe-mocha.png
+    - assets/images/flat-white.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
